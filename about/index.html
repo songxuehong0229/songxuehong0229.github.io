@@ -261,43 +261,44 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope
+  itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
+  <div class="article-meta">
+    <a href="/about/index.html" class="article-date">
       <time datetime="2019-10-14T03:09:01.000Z" itemprop="datePublished">2019-10-14</time>
 </a>
 
 
-    </div>
+  </div>
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
+  <input type="hidden" class="isFancy" />
+  
+  
+  <header class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 class="article-title" itemprop="name">
       about
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-        <div class="clearfix"></div>
-      </div>
-      
+  </header>
+  
+  <div class="article-info article-info-post">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <style>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    
+    <style>
     .article-meta { display: none; }
     #container .article .article-title { padding-right: 0; }
     .article-header {
@@ -315,14 +316,14 @@
 </style>
 
 
-          
-        
-      
-    </div>
+    
+    
     
   </div>
   
-    
+  </div>
+  
+  
 
 
   
@@ -330,7 +331,7 @@
 
 
 
-    
+
 <div class="share">
     
         <div class="bdsharebuttonbox">
@@ -357,37 +358,44 @@
 
 
 
-    
-        <section id="comments">
-    <style> aside.comment-bar { margin: auto 30px; }</style>
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function(){
-            this.page.url = 'http://yoursite.com/about/index.html';
-            this.page.identifier = 'about/index.html';
-        };
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = '//.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        }
-    </script>
-    
-    <script> loadComment(); </script>
 
+<section class="livere" id="comments">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NzA3OC8yMzU3OA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
 </section>
 
 
-    
 
 
 
 
-
-    <script>
-        
-    </script>
+<script>
+  < %
+  if (post.fancybox === false) {
+    %
+    >
+    yiliaConfig.fancybox = false; <
+    %
+  } % >
+</script>
 </div>
       <footer id="footer">
     <div class="outer">
