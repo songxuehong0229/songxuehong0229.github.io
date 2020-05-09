@@ -26,9 +26,10 @@ menu:
   # weibo:
   #   url: http://www.weibo.com/ysweb
   #   target: _blank
-  # link:
-  #   text: 测试
-  #   url: /custom
+  # gratipay:
+  #   text: love
+  #   url: /love
+  #   target: _blank
 
 # 你的头像url
 avatar: /img/avatar.png
