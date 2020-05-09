@@ -15,19 +15,20 @@ menu:
     text: 归档
     url: /archives
   tags:
+    text: 标签
     url: /tags
-  th-list:
-    text: Categories
-    url: /categories
+  # th-list:
+  #   text: Categories
+  #   url: /categories
   github:
     url: https://github.com/songxuehong0229/songxuehong0229.github.io
     target: _blank
   # weibo:
   #   url: http://www.weibo.com/ysweb
   #   target: _blank
-  link:
-    text: 测试
-    url: /custom
+  # link:
+  #   text: 测试
+  #   url: /custom
 
 # 你的头像url
 avatar: /img/avatar.png
@@ -161,7 +162,7 @@ visit_counter:
 # 动态定义title
 title_change:
   normal: (つェ⊂)咦!又好了!
-  leave: 死鬼去哪里了！
+  leave: 小可爱去哪里了！
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false

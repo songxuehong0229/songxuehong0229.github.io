@@ -1,7 +1,7 @@
 ---
 title: 数组splice方法
 date: 2020-05-08 17:18:07
-tags: 数组splice方法
+tags: [JavaScript, html]
 ---
 
 ## 数组splice方法注意项
