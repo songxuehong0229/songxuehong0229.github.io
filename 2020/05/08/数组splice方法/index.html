@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="数组splice方法">
+    <meta name="keywords" content="JavaScript,html">
     <meta name="description" content="数组splice方法注意项1在for循环中，使用if来判断某个条件来截取数组中的对象时，最后会剩余一个符合条件判断的对象。 原因:这是因为在进行截取数组之后，当前对象所在位置也发生了变化，所以在进行截取时要让当前对象的位置后退一位，例子如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数组splice方法">
@@ -30,11 +30,14 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/spliceImg.png">
 <meta property="article:published_time" content="2020-05-08T09:18:07.000Z">
-<meta property="article:modified_time" content="2020-05-09T06:08:23.962Z">
+<meta property="article:modified_time" content="2020-05-09T06:13:27.141Z">
 <meta property="article:author" content="不二夏天">
-<meta property="article:tag" content="数组splice方法">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="html">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/spliceImg.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="Hexo" href="/atom.xml">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -84,14 +87,7 @@
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
-                Tags
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories"  >
-                <i class="icon icon-lg icon-th-list"></i>
-                Categories
+                标签
               </a>
             </li>
         
@@ -99,13 +95,6 @@
               <a href="https://github.com/songxuehong0229/songxuehong0229.github.io" target="_blank" >
                 <i class="icon icon-lg icon-github"></i>
                 Github
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/custom"  >
-                <i class="icon icon-lg icon-link"></i>
-                测试
               </a>
             </li>
         
@@ -206,7 +195,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-05-09T06:08:23.962Z" itemprop="dateUpdated">2020-05-09 14:08:23</time>
+    最后更新时间：<time datetime="2020-05-09T06:13:27.141Z" itemprop="dateUpdated">2020-05-09 14:13:27</time>
 </span><br>
 
 
@@ -232,7 +221,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" rel="tag">数组splice方法</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/" rel="tag">html</a></li></ul>
 
 
             
@@ -360,6 +349,8 @@
 
         <p>
             
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
             <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
@@ -418,7 +409,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACxElEQVR42u3awU4rMQwFUP7/p0GwApWWe+1J6eLMCvVNm5w8yY5sv73Fz/vX8/3v75/cfn77zr33762VrHjZg4eHhzfaerK55PP2IBLq4yO+tzoeHh7eaV6eDPLE0Ab95Lv5nvHw8PBegff4ctwG7uSK3H4XDw8P7zV5szDdlhj2K+Lh4eGd5uVBfBPiW3ZbBMHDw8N7Dm/WAPvfv4/39/Dw8PBGXfW2rZWXgDdvFrvFw8PDO8Dbl0rbTectsc1s1WWVYDw8PLzRVFLbptongzwlREVePDw8vAO8TRTNL9ZJKpq1u4rrPh4eHt6at2k7zVJIPiLQJo9ffhMPDw/vAC9fIO8xtYkkH1nIE099fnh4eHgjXh708wSQDG9tJgGif8XDw8M7wHscsmeF13wsYFPgSNbFw8PDu5bXNpP2raxZ8mgbbEXtGQ8PD6/ktaF5kzw2uWu2Hzw8PLzTvP3oVZIwNoc4vJTj4eHhHeDlSyZpoK6ClA2ttuiMh4eH90xeEojbZWblj1mBAw8PD+80r71Yz8aq2qSSN9j+eB8PDw/vUt6s/T9r7bcDW/lxrP7f8PDw8GJeOxZw1VY2v5P8wo+hKzw8PLxjvFlwzy/ieRliNWLVdtjw8PDwJl3+YbMqL1JsjqC9oEczZXh4eHhr3qY9n296dnBtgomSBx4eHt6C9/7wmSWABDnj1aMJeHh4eE/n5fhNTSC/ptcFDjw8PLwDvLYF1RYj2pGsWQrJxyDw8PDw9rxZMkjC9GYKrG2D3T0OPDw8vAO8ay/E+UHMyrWzwgceHh7eCV4b3Gcb2l+p28YbHh4e3mneVYWJNgvtr8jRHAQeHh7eP/GSC3H+3TbcJ9/95U08PDy8F+C11+J8bKst10bDDXh4eHjHeG0Tq10mD/r5AUUlDzw8PLwDvKsaYHmbapZUitmxE6MDeHh4eJ/PBy1rpkuTTuiQAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
@@ -467,7 +458,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = '小可爱去哪里了！';
             clearTimeout(titleTime);
         } else {
             document.title = '(つェ⊂)咦!又好了!';

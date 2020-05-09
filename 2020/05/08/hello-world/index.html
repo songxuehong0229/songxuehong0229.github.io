@@ -33,6 +33,8 @@
 <meta property="article:author" content="不二夏天">
 <meta name="twitter:card" content="summary">
     
+        <link rel="alternate" type="application/atom+xml" title="Hexo" href="/atom.xml">
+    
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
@@ -81,14 +83,7 @@
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
-                Tags
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories"  >
-                <i class="icon icon-lg icon-th-list"></i>
-                Categories
+                标签
               </a>
             </li>
         
@@ -96,13 +91,6 @@
               <a href="https://github.com/songxuehong0229/songxuehong0229.github.io" target="_blank" >
                 <i class="icon icon-lg icon-github"></i>
                 Github
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/custom"  >
-                <i class="icon icon-lg icon-link"></i>
-                测试
               </a>
             </li>
         
@@ -359,6 +347,8 @@
 
         <p>
             
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
             <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
@@ -417,7 +407,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://aiaxue.xyz/2020/05/08/hello-world/" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABw0lEQVR42u3aS27DMAwFwNz/0inQbSHnkbQUFxitvJCVcRYEP3q94vX+XX+fVzvne0YLFxd3zH1frhVx9WPX714/XxtwcXHPc5PgtaLk9OSTPthwcXEfxr0OOpNUCRcX9/9yk/RlTsfFxX0ONyl+8nLl3tNwcXHPc+9KTSbPh/q7uLi446lENaBUG6zlX8fFxT3C3TcmScqYJOkpH4SLi3srt0fsjUvzyxkfajVcXNwN3Opli3xP3gBN0qllRoaLi7uN2xuo5CVQNYVavouLi3uEmweUSZpSLYGi9AsXF3czNz+id/EioRdatLi4uJu5efKRlzfV5mlhYIOLi3uEm4ehSfbUa6ks9+Pi4n6VW01Z8t5Ffn0TFxf3PDcJPdXwNPnnCpMfXFzcbdzqYKNX5ORt1iho4uLibubmyUcennrt0Sjw4eLiHuROmp47SqYPgQwXF/cIN1872qbNIQouLu42bjWg3HXZIv/sXsmEi4s75/aCV95mzfdHyRAuLu5B7vz6VDV49YouXFzcp3Grg9hkZzkXw8XFfTA3T496ZdXyHFxc3IPc6sB1MkztfQYuLu5JbvXlajlUHeXOr3Ph4uIOuD+HAFeun/vaBgAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
@@ -466,7 +456,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = '小可爱去哪里了！';
             clearTimeout(titleTime);
         } else {
             document.title = '(つェ⊂)咦!又好了!';
