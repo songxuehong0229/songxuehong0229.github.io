@@ -14,28 +14,26 @@
     
     
     
-    <title>数组splice方法 | Hexo</title>
+    <title>谷歌时间瀑布 | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="JavaScript,html">
-    <meta name="description" content="数组splice方法注意项1在for循环中，使用if来判断某个条件来截取数组中的对象时，最后会剩余一个符合条件判断的对象。 原因:这是因为在进行截取数组之后，当前对象所在位置也发生了变化，所以在进行截取时要让当前对象的位置后退一位，例子如下：">
+    <meta name="keywords" content="">
+    <meta name="description" content="Chrome的瀑布流（Waterfall）123当需要调试网页或分析网站性能时，这时候需要打开浏览器控制台，查看网络请求，看网页加载了哪些资源，以及对应的请求方式（Method）、状态码（Status）、资源类型（Type）、大小（Size）、耗费的时间（Time）等。如果某个资源耗费的时间比较长，我们需要深入分析时，则需要看另一个项目：瀑布流（Waterfall），在Waterfall中我们可以">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组splice方法">
-<meta property="og:url" content="http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="谷歌时间瀑布">
+<meta property="og:url" content="http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="数组splice方法注意项1在for循环中，使用if来判断某个条件来截取数组中的对象时，最后会剩余一个符合条件判断的对象。 原因:这是因为在进行截取数组之后，当前对象所在位置也发生了变化，所以在进行截取时要让当前对象的位置后退一位，例子如下：">
+<meta property="og:description" content="Chrome的瀑布流（Waterfall）123当需要调试网页或分析网站性能时，这时候需要打开浏览器控制台，查看网络请求，看网页加载了哪些资源，以及对应的请求方式（Method）、状态码（Status）、资源类型（Type）、大小（Size）、耗费的时间（Time）等。如果某个资源耗费的时间比较长，我们需要深入分析时，则需要看另一个项目：瀑布流（Waterfall），在Waterfall中我们可以">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/spliceImg.png">
-<meta property="article:published_time" content="2020-05-08T09:18:07.000Z">
-<meta property="article:modified_time" content="2020-05-09T06:13:27.141Z">
+<meta property="og:image" content="http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/time.jpg">
+<meta property="article:published_time" content="2021-03-30T02:30:47.000Z">
+<meta property="article:modified_time" content="2021-03-30T02:31:12.588Z">
 <meta property="article:author" content="不二夏天">
-<meta property="article:tag" content="JavaScript">
-<meta property="article:tag" content="html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/spliceImg.png">
+<meta name="twitter:image" content="http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/time.jpg">
     
         <link rel="alternate" type="application/atom+xml" title="Hexo" href="/atom.xml">
     
@@ -109,7 +107,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">数组splice方法</div>
+        <div class="flex-col header-title ellipsis">谷歌时间瀑布</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -131,11 +129,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">数组splice方法</h1>
+        <h1 class="title">谷歌时间瀑布</h1>
         <h5 class="subtitle">
             
-                <time datetime="2020-05-08T09:18:07.000Z" itemprop="datePublished" class="page-time">
-  2020-05-08
+                <time datetime="2021-03-30T02:30:47.000Z" itemprop="datePublished" class="page-time">
+  2021-03-30
 </time>
 
 
@@ -154,18 +152,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数组splice方法注意项"><span class="post-toc-number">1.</span> <span class="post-toc-text">数组splice方法注意项</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Chrome的瀑布流（Waterfall）"><span class="post-toc-number">1.</span> <span class="post-toc-text">Chrome的瀑布流（Waterfall）</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-数组splice方法"
+<article id="post-谷歌时间瀑布"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">数组splice方法</h1>
+        <h1 class="post-card-title">谷歌时间瀑布</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-05-08 17:18:07" datetime="2020-05-08T09:18:07.000Z"  itemprop="datePublished">2020-05-08</time>
+            <time class="post-time" title="2021-03-30 10:30:47" datetime="2021-03-30T02:30:47.000Z"  itemprop="datePublished">2021-03-30</time>
 
             
 
@@ -178,16 +176,15 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="数组splice方法注意项"><a href="#数组splice方法注意项" class="headerlink" title="数组splice方法注意项"></a>数组splice方法注意项</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在<span class="keyword">for</span>循环中，使用<span class="keyword">if</span>来判断某个条件来截取数组中的对象时，最后会剩余一个符合条件判断的对象。</span><br></pre></td></tr></table></figure>
-<p>原因:这是因为在进行截取数组之后，当前对象所在位置也发生了变化，所以在进行截取时要让当前对象的<br>位置后退一位，例子如下：</p>
+            <h2 id="Chrome的瀑布流（Waterfall）"><a href="#Chrome的瀑布流（Waterfall）" class="headerlink" title="Chrome的瀑布流（Waterfall）"></a>Chrome的瀑布流（Waterfall）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">当需要调试网页或分析网站性能时，这时候需要打开浏览器控制台，查看网络请求，看网页加载了哪些资源，以及对应的请求方式（Method）、状态码（Status）、资源类型（Type）、大小（Size）、耗费的时间（Time）等。</span><br><span class="line"></span><br><span class="line">如果某个资源耗费的时间比较长，我们需要深入分析时，则需要看另一个项目：瀑布流（Waterfall），在Waterfall中我们可以看出时间具体花在了哪些部分。</span><br></pre></td></tr></table></figure>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/spliceImg.png" alt="代码例子" title>
+                    <img src="/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/time.jpg" alt="例子" title>
                 </div>
-                <div class="image-caption">代码例子</div>
+                <div class="image-caption">例子</div>
             </figure>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">瀑布流中各项指标含义如下：</span><br><span class="line">Queueing</span><br><span class="line">浏览器将资源放入队列时间，比如：遇到更高优先级的请求或请求并发超过6了。</span><br><span class="line">Stalled</span><br><span class="line">因放入队列时间而发生的停滞时间。</span><br><span class="line">Proxy negotiation</span><br><span class="line">与代理服务器协商时间。</span><br><span class="line">DNS Lookup</span><br><span class="line">DNS解析时间，浏览器需要将域名转换成IP。</span><br><span class="line">Initial Connection</span><br><span class="line">在浏览器发送请求前，需要建立HTTP连接的时间。</span><br><span class="line">SSL</span><br><span class="line">如果网站使用了HTTPS，这个就是浏览器与服务器建立安全性连接的时间。</span><br><span class="line">Request sent</span><br><span class="line">请求发送的时间。</span><br><span class="line">Waiting (TTFB)</span><br><span class="line">等待服务端返回数据的时间，这个时间受制于服务端处理性能。</span><br><span class="line">Content Download</span><br><span class="line">浏览器下载资源的时间，这个时间受制于文件的大小和带宽。</span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
@@ -195,12 +192,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-05-09T06:13:27.141Z" itemprop="dateUpdated">2020-05-09 14:13:27</time>
+    最后更新时间：<time datetime="2021-03-30T02:31:12.588Z" itemprop="dateUpdated">2021-03-30 10:31:12</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" target="_blank" rel="external">http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/" target="_blank" rel="external">http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/</a>
         
     </div>
     
@@ -221,8 +218,6 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/" rel="tag">html</a></li></ul>
-
 
             
 <div class="page-share-wrap">
@@ -231,7 +226,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/&title=《数组splice方法》 — Hexo&pic=http://aiaxue.xyz/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/&title=《谷歌时间瀑布》 — Hexo&pic=http://aiaxue.xyz/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -241,22 +236,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/&title=《数组splice方法》 — Hexo&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/&title=《谷歌时间瀑布》 — Hexo&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《数组splice方法》 — Hexo&url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/&via=http://aiaxue.xyz" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《谷歌时间瀑布》 — Hexo&url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/&via=http://aiaxue.xyz" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -276,16 +271,16 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
-    <div class="waves-block waves-effect prev">
-      <a href="/2020/05/08/hello-world/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/05/08/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
         <h4 class="title">Hello World</h4>
       </a>
     </div>
-  
-
   
 </nav>
 
@@ -373,7 +368,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/&title=《数组splice方法》 — Hexo&pic=http://aiaxue.xyz/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/&title=《谷歌时间瀑布》 — Hexo&pic=http://aiaxue.xyz/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -383,22 +378,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/&title=《数组splice方法》 — Hexo&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/&title=《谷歌时间瀑布》 — Hexo&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《数组splice方法》 — Hexo&url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/&via=http://aiaxue.xyz" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《谷歌时间瀑布》 — Hexo&url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/&via=http://aiaxue.xyz" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aiaxue.xyz/2020/05/08/%E6%95%B0%E7%BB%84splice%E6%96%B9%E6%B3%95/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -409,7 +404,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACxElEQVR42u3awU4rMQwFUP7/p0GwApWWe+1J6eLMCvVNm5w8yY5sv73Fz/vX8/3v75/cfn77zr33762VrHjZg4eHhzfaerK55PP2IBLq4yO+tzoeHh7eaV6eDPLE0Ab95Lv5nvHw8PBegff4ctwG7uSK3H4XDw8P7zV5szDdlhj2K+Lh4eGd5uVBfBPiW3ZbBMHDw8N7Dm/WAPvfv4/39/Dw8PBGXfW2rZWXgDdvFrvFw8PDO8Dbl0rbTectsc1s1WWVYDw8PLzRVFLbptongzwlREVePDw8vAO8TRTNL9ZJKpq1u4rrPh4eHt6at2k7zVJIPiLQJo9ffhMPDw/vAC9fIO8xtYkkH1nIE099fnh4eHgjXh708wSQDG9tJgGif8XDw8M7wHscsmeF13wsYFPgSNbFw8PDu5bXNpP2raxZ8mgbbEXtGQ8PD6/ktaF5kzw2uWu2Hzw8PLzTvP3oVZIwNoc4vJTj4eHhHeDlSyZpoK6ClA2ttuiMh4eH90xeEojbZWblj1mBAw8PD+80r71Yz8aq2qSSN9j+eB8PDw/vUt6s/T9r7bcDW/lxrP7f8PDw8GJeOxZw1VY2v5P8wo+hKzw8PLxjvFlwzy/ieRliNWLVdtjw8PDwJl3+YbMqL1JsjqC9oEczZXh4eHhr3qY9n296dnBtgomSBx4eHt6C9/7wmSWABDnj1aMJeHh4eE/n5fhNTSC/ptcFDjw8PLwDvLYF1RYj2pGsWQrJxyDw8PDw9rxZMkjC9GYKrG2D3T0OPDw8vAO8ay/E+UHMyrWzwgceHh7eCV4b3Gcb2l+p28YbHh4e3mneVYWJNgvtr8jRHAQeHh7eP/GSC3H+3TbcJ9/95U08PDy8F+C11+J8bKst10bDDXh4eHjHeG0Tq10mD/r5AUUlDzw8PLwDvKsaYHmbapZUitmxE6MDeHh4eJ/PBy1rpkuTTuiQAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuElEQVR42u3aQU7DQAwFUO5/6SKxQyXptz2mIL2sUJrQeYM0NrY/PuLr8XU937m67p+5+p3Pb13dOXzh4eHhtZZeXWj+7v1m3b91tR2F78XDw8Nb4+WLyIPH/XF/H3KSUBGtAQ8PD++tvCRR7uW0eVaMh4eH99951aQ5T6Pz9BoPDw/vXbxeyXVSNc23eFQEwcPDw1vgVRtgf+Hnxf4eHh4e3uAQT4716gGdJMp5kHjx7Xh4eHgLvCRtrZ661TGpScKdlDDw8PDwzvJ6AwHVZn8eDOZli28/4+Hh4a3xJk2pagmjmkDnRd4f7uDh4eH9Ci9fYnXpSZCojhq8WDMeHh7eGm9ehC2MQLWKGnm6X55iwMPDw2vx8rQ1H4FKSrS9BD1J+stxDw8PDy/mTRpReTjZaHfl/wbg4eHhneX1Dv286FAtNOSbGDXY8PDw8NZ4k4M+T76rZdyk5FEuRuDh4eGNeSttpziBrg4EVLcDDw8Pb4PXK6pOnpyXIZKWGx4eHt4er5cWz4cPThWLy6k2Hh4e3piXH9x5afX++fmnhc3Fw8PDW+NNBqry0vAkaW623PDw8PB+hbeR2labatVxhBe1Fjw8PLyjvOowQfXJPDnOt2lS5MXDw8Ob86pLyReXPJmHnOYK8fDw8BZ4eQDIm2F5Sj3ZgkLijoeHh3eUVy3OnmpT5aQ8gcbDw8N7F69aaOiVCU6FnxdNODw8PLwFXuGDVqK8nXbnz+Dh4eGd4j2KV37c94JNb4Dg8nvx8PDwFnj5NRmBqo4OJAl0EmDw8PDw9nhJMEiO6TwY9AJML5zg4eHh7fHydtQ8tU027litBQ8PD++tvEn5YJLpV/8AeHh4eH+NVy0fVEe1Jun1KKXGw8PDK/LmxYhqWTYJFfn9yzt4eHh4C7xeA2ze7uqVg/O38PDw8BZ4n0ojSt+76ogwAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 

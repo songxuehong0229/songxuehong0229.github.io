@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aiaxue.xyz/"/>
-  <updated>2020-05-08T08:08:43.319Z</updated>
+  <updated>2021-03-30T02:31:12.588Z</updated>
   <id>http://aiaxue.xyz/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谷歌时间瀑布</title>
+    <link href="http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/"/>
+    <id>http://aiaxue.xyz/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/</id>
+    <published>2021-03-30T02:30:47.000Z</published>
+    <updated>2021-03-30T02:31:12.588Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Chrome的瀑布流（Waterfall）"><a href="#Chrome的瀑布流（Waterfall）" class="headerlink" title="Chrome的瀑布流（Waterfall）"></a>Chrome的瀑布流（Waterfall）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">当需要调试网页或分析网站性能时，这时候需要打开浏览器控制台，查看网络请求，看网页加载了哪些资源，以及对应的请求方式（Method）、状态码（Status）、资源类型（Type）、大小（Size）、耗费的时间（Time）等。</span><br><span class="line"></span><br><span class="line">如果某个资源耗费的时间比较长，我们需要深入分析时，则需要看另一个项目：瀑布流（Waterfall），在Waterfall中我们可以看出时间具体花在了哪些部分。</span><br></pre></td></tr></table></figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2021/03/30/%E8%B0%B7%E6%AD%8C%E6%97%B6%E9%97%B4%E7%80%91%E5%B8%83/time.jpg" alt="例子" title>                </div>                <div class="image-caption">例子</div>            </figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">瀑布流中各项指标含义如下：</span><br><span class="line">Queueing</span><br><span class="line">浏览器将资源放入队列时间，比如：遇到更高优先级的请求或请求并发超过6了。</span><br><span class="line">Stalled</span><br><span class="line">因放入队列时间而发生的停滞时间。</span><br><span class="line">Proxy negotiation</span><br><span class="line">与代理服务器协商时间。</span><br><span class="line">DNS Lookup</span><br><span class="line">DNS解析时间，浏览器需要将域名转换成IP。</span><br><span class="line">Initial Connection</span><br><span class="line">在浏览器发送请求前，需要建立HTTP连接的时间。</span><br><span class="line">SSL</span><br><span class="line">如果网站使用了HTTPS，这个就是浏览器与服务器建立安全性连接的时间。</span><br><span class="line">Request sent</span><br><span class="line">请求发送的时间。</span><br><span class="line">Waiting (TTFB)</span><br><span class="line">等待服务端返回数据的时间，这个时间受制于服务端处理性能。</span><br><span class="line">Content Download</span><br><span class="line">浏览器下载资源的时间，这个时间受制于文件的大小和带宽。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Chrome的瀑布流（Waterfall）&quot;&gt;&lt;a href=&quot;#Chrome的瀑布流（Waterfall）&quot; class=&quot;headerlink&quot; title=&quot;Chrome的瀑布流（Waterfall）&quot;&gt;&lt;/a&gt;Chrome的瀑布流（Waterfall）&lt;/
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
